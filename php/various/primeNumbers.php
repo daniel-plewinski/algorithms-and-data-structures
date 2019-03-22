@@ -1,8 +1,8 @@
 <?php
 
 /**
+ * returns array of prime numbers from 0 to n range
  * @author Daniel Plewinski
- * returns array of prime numbers from n range
  * @param $n
  * @return array
  */
