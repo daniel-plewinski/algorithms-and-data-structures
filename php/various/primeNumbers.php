@@ -9,13 +9,13 @@
 
 function getPrimeNumbers($n) {
 
-    $primesArr = [2];
+    $primesArr = [];
 
-    for ($x = 3; $x < $n; $x += 2 ) {
+    for ($x = 2; $x < $n; $x++ ) {
 
         $isPrime = true;
 
-        for ($i = 3; $i < $x; $i++) {
+        for ($i = 2; $i < $x; $i++) {
 
             if ($x % $i === 0) {
                 $isPrime = false;
