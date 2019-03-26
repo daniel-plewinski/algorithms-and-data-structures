@@ -8,11 +8,11 @@
  */
 function getFactorial($n) {
 
-    if ($n === 0) {
-        return 1;
+    while ($n >1) {
+        return $n * getFactorial($n-1);
     }
+    return 1;
 
-    return $n * getFactorial($n-1);
 }
 
-echo getFactorial(3);
+echo getFactorial(5);
