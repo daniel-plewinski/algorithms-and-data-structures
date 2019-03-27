@@ -13,16 +13,16 @@ function countUniqueValues($arr){
         return 0;
     }
 
-    $i = 0;
+    $counter = 0;
 
-    for($j=1; $j < count($arr); $j++){
+    for($i=1; $i < count($arr); $i++){
 
-        if($arr[$i] !== $arr[$j]){
-            $i++;
-            $arr[$i] = $arr[$j];
+        if($arr[$counter] !== $arr[$i]){
+            $counter++;
+            $arr[$counter] = $arr[$i];
         }
     }
-    return $i + 1;
+    return $counter + 1;
 }
 echo countUniqueValues([1,2,2,5,7,7,99]);
 
