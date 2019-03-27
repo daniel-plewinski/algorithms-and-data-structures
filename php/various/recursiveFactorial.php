@@ -8,7 +8,7 @@
  */
 function getFactorial($n) {
 
-    while ($n >1) {
+    while ($n >=1) {
         return $n * getFactorial($n-1);
     }
     return 1;
