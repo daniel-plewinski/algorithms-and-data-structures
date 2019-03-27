@@ -15,9 +15,9 @@ function countUniqueValues($arr){
 
     $counter = 0;
 
-    for($i=1; $i < count($arr); $i++){
+    for ($i=1; $i < count($arr); $i++) {
 
-        if($arr[$counter] !== $arr[$i]){
+        if ($arr[$counter] !== $arr[$i]) {
             $counter++;
             $arr[$counter] = $arr[$i];
         }
